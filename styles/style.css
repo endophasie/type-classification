@@ -1,3 +1,77 @@
 body {
-    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.master {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.mindtree__type {
+    position: relative;
+}
+
+.mindtree__title {
+    width: 200px;
+    position: relative;
+}
+
+.mindtree__title::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: #000;
+}
+
+.mindtree__link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.mindtree__link:target .mindtree__content {
+    display: block;
+}
+
+.mindtree__content {
+    display: none;
+
+    position: absolute;
+    left: 180px;
+    top: 0;
+}
+
+.mindtree__type:first-of-type .mindtree__content {
+    display: block;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 36px;
+    transition: opacity 250ms ease;
+}
+
+.logo__link:hover {
+    opacity: 0.65;
+}
+
+.footer__content {
+    padding: 20px;
 }
