@@ -1,10 +1,11 @@
-body {
-    margin: 0;
+html {
     height: 100%;
 }
 
-html {
+body {
+    margin: 0;
     height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .master {
@@ -17,45 +18,69 @@ html {
     flex: 1 0 auto;
 }
 
+.mindtree {
+	list-style: none;
+	padding: 0 0 0 150px;
+}
+
 .mindtree__type {
     position: relative;
+    display: flex;
 }
 
 .mindtree__title {
-    width: 200px;
     position: relative;
-}
-
-.mindtree__title::after {
-    content: '';
-    width: 100px;
-    height: 1px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    background-color: #000;
+    margin: 0 0 30px;
 }
 
 .mindtree__link {
     color: #000000;
     text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
-.mindtree__link:target .mindtree__content {
-    display: block;
+.mindtree__link:hover {
+	color: purple;
+    transition: color 200ms ease-in-out;
 }
+
+.mindtree__content.is-show {
+	display: block;
+	
+}
+
 
 .mindtree__content {
     display: none;
-
-    position: absolute;
-    left: 180px;
+    position: fixed;
+    /* left: 38%; */
     top: 0;
+    width: auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 12px;
+    background: #fff;
+    z-index: 10;
+    right: 5%;
+    overflow-y: scroll;
+    margin-left: 500px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.mindtree__type:first-of-type .mindtree__content {
-    display: block;
+.mindtree__type::before {
+	content: '';
+	top: 10px;
+	border-width: .2em 0 0 .2em;
+	border-color: #000;
+	border-style: solid;
+	width: 100px;
+	height: 68px;
+	border-radius: 1em 0 0 0;
+	position: absolute;
+	left: -110px;
 }
+
 
 .logo {
     padding: 20px;
