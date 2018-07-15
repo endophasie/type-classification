@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Таймлайн</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: sofia-pro, sans-serif;
+    }
+  </style>
+
+  <script type="text/javascript" src="scripts/vis.js"></script>
+  <link href="styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fui0gvv.css">
+
+</head>
+<body>
+
+
+<div id="visualization"></div>
+
+<script>
+
+  var itme5 = document.createElement('div');
+ itme5.appendChild(document.createTextNode('Script'));
+ itme5.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme5.appendChild(img5);
+
+
+ var itme1 = document.createElement('div');
+ itme1.appendChild(document.createTextNode('Script'));
+ itme1.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme1.appendChild(img5);
+
+ var itme2 = document.createElement('div');
+ itme2.appendChild(document.createTextNode('Script'));
+ itme2.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme2.appendChild(img5);
+
+ var itme3 = document.createElement('div');
+ itme3.appendChild(document.createTextNode('Script'));
+ itme3.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme3.appendChild(img5);
+
+
+
+  var items = new vis.DataSet([
+    {id: 19, content: itme5, start: '2013-04-25'},
+    {id: 20, content: itme1, start: '1923'},
+    {id: 21, content: itme2, start: '1950'},
+    {id: 22, content: itme3, start: '1980'},
+
+    {id: 'A', content: 'Period A', start: '2014-01-16', end: '2014-01-22', type: 'background', group: 1},
+    {id: 'B', content: 'Period B', start: '2014-01-23', end: '2014-01-26', type: 'background', group: 2},
+    {id: 'C', content: 'Period C', start: '2014-01-27', end: '2014-02-03', type: 'background'}, // no group
+    {id: 'D', content: 'Period D', start: '2014-01-14', end: '2014-01-20', type: 'background', group: 'non-existing'},
+    {id: 1, content: 'item 1<br>start', start: '2014-01-30', group: 1},
+    {id: 2, content: 'item 2', start: '2014-01-18', group: 1},
+    {id: 3, content: 'item 3', start: '2014-01-21', group: 3},
+    {id: 4, content: 'item 4', start: '2014-01-17', end: '2014-01-21', group: 2},
+    {id: 5, content: 'item 5', start: '2014-01-28', type:'point', group: 2},
+    {id: 6, content: 'item 6', start: '2014-01-25', group: 3},
+    {id: 'E', content: 'Modern', start: '1910-01-16', end: '1950-01-22', type: 'background', group: 1},
+    {id: 'F', content: 'Post Modern', start: '1980', end: '2014', type: 'background', group: 2},
+    {id: 'G', content: 'Эпоха гротесков', start: '1910-01-16', end: '1950-01-22', type: 'background', group: 4},
+    // {id: 'D', content: 'События в искусстве', start: '1980', end: '2014', type: 'background'},
+    // {id: 'E', content: 'События в мире', start: '1980', end: '2014', type: 'background', group: 2, group: 'non-existing'},
+    {id: 7, content: 'item 1<br>start', start: '1920', group: 1},
+    {id: 8, content: 'item 2', start: '1900', group: 4},
+    {id: 9, content: 'Edward Johnston', start: '1913', end: '1916', group: 1},
+    {id: 10, content: 'Johnston', start: '1916'},
+    {id: 11, content: 'Eric Gill', start: '1926', end: '1928'}, 
+    {id: 12, content: 'Gill Sans', start: '1928'},
+    {id: 13, content: 'Frederic W. Goudy', start: '1929', end: '1930', group: 4},
+    {id: 14, content: 'Goudy Sans', start: '1930'},
+    {id: 15, content: 'Hermann Zapf', start: '1952', end: '1958'},
+    {id: 16, content: 'Optima', start: '1958'},
+    {id: 17, content: 'Hans Eduard Meier', start: '1954', end:'1968', group: 2},
+    {id: 18, content: 'A. Boton, A. Hollenstein', start: '1960', end:'1976'},
+    {start: new Date(1900),  content: 'Появление фотонабора'},
+
+    {start: new Date(1913), content: 'Открытие школы Bauhaus', group: 1},
+    {start: new Date(1940,7,13), content: 'Такой-то такой-то выступает с крутым докладом на крутой конференции'},
+    {id: 23, content: 'Gill Sans', start: '1928', type:'point', group: 4},
+    {id: 24, content: 'Helvetica', start: '1940', type:'point', group: 4},
+    {id: 25, content: 'Myriad', start: '1920', type:'point', group: 4}
+  ]);
+
+  var groups = new vis.DataSet([
+    {id: 1, content: 'События в мире'},
+    {id: 2, content: 'События в искусстве'},
+    {id: 3, content: 'Популярные стили'},
+    {id: 4, content: 'Шрифты'}
+
+  ]);
+
+  var container = document.getElementById('visualization');
+  var options = {
+    // start: '2014-01-10',
+    // end: '2014-02-10',
+    editable: true
+  };
+
+  var timeline = new vis.Timeline(container, items, groups, options);
+
+</script>
+</body>
+</html>

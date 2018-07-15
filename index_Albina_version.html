@@ -1,53 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Types classification</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/vis.js"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/fui0gvv.css">
-    <link href="styles/vis-network.min.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Types classification mindmap</title>
     <link rel="stylesheet" href="styles/style.css">
-
-
-
-
-    <style type="text/css">
-        #mynetwork {
-            width: 100%;
-            height: 100%;
-            border: 1px solid lightgray;
-            background-color: #d8d8d8;
-        }
-    </style>
 </head>
 <body>
-
-<div id="mynetwork"></div>
-
-<div class="display-wrap" lang="ru">
-             <div class="info info-2" style="display: none;">
-                   
+    <div class="master">
+        <header class="header">
+            <div class="hader__content">
+                <div class="logo"><a href="/" class="logo__link">Types classification</a></div>
+            </div>
+        </header>
+        <main class="main">
+            <ul class="mindtree">
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content1" class="mindtree__link js-type">Гуманистическая антиква</a>
+                    </h2>
                     <article class="mindtree__content js-info" id="content1">
-                         <h2 class="mindtree__title">
-                        Гуманистическая антиква, венецианская антиква
-                        </h2>
-                       <!--  <img src="img/classification/humanistic.gif" alt="Humanistic" class="mindtree__content-pic"> -->
+                        <img src="img/classification/humanistic.gif" alt="Humanistic" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
-                         <div class="description_img"> 
-                            <p class="languages">ENG: Humanistic; FR: Humanes; GE: Venezianische Antiqua</p>
+                            <p>ENG: Humanistic; FR: Humanes; GE: Venezianische Antiqua</p>
                             <p>Старейший итальянский печатный тип шрифта, основанный на почерках гуманистов. Один из первых вырезанных шрифтов в этой категории был создан в конце 15 века Николасом Дженсоном, во время итальянского возрождения. Этот почерк основывается на каролингских минускулах 9го века. Это основной пример для первой группы, которую мы до сих пор широко используем: венецианскую антикву.</p>
-                            <p class="type_characteristics">Характеристики:</p>
-                            <p>Ось контраста толщин наклонена влево. Одна из наиболее характерных черт — наклонный горизонтальный штрих в букве “е”. Обычно верхние выносные элементы у строчных выше прописных букв. Верхние засечки крышеобразные, вогнутые. Засечки часто заканчиваются строго, угловато и немного скруглены. Не очень сильный контраст толщин, меньше, чем у ренессансной антиквы. Общий рисунок гуманистических антикв примечательно легкий. Жирные и наклонные начертания были добавлены после и часто не соответствуют характеру этих шрифтов. </p> </div>
-                            <div class="img_char">
-                            <img src="char.jpg" class="img_char">
-                        </div>
-                        
+                            <p>Характеристики:</p>
+                            <p>Ось контраста толщин наклонена влево. Одна из наиболее характерных черт — наклонный горизонтальный штрих в букве “е”. Обычно верхние выносные элементы у строчных выше прописных букв. Верхние засечки крышеобразные, вогнутые. Засечки часто заканчиваются строго, угловато и немного скруглены. Не очень сильный контраст толщин, меньше, чем у ренессансной антиквы. Общий рисунок гуманистических антикв примечательно легкий. Жирные и наклонные начертания были добавлены после и часто не соответствуют характеру этих шрифтов. </p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/humanistic/centaur.jpg" alt="Centaur" class="popup_classification_ex hover-shadow" onclick="openModal();currentSlide(1)">
+                                    <img src="img/humanistic/centaur.jpg" alt="Centaur" class="popup_classification_ex">
                                     <p>Centaur, Bruce Rogers 1914г (на основе письма Nicolas Jenson 1470г.)</p>
                                 </span>
                                 <span class="type-example">    
@@ -78,18 +60,16 @@
                                     <img src="img/humanistic/schneidler.jpg" alt="Schneidler" class="popup_classification_ex">
                                     <p>Schneidler, Friedrich Hermann Ernst Schneidler, 1936</p>
                                 </span>
-
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>    
                         </div>
                     </article>
-             </div>
-             <div class="info info-3" style="display: none;">
-                    <article class="mindtree__content js-info" id="content1">
-                        <h2 class="mindtree__title">
-                            Ренессансная антиква
-                        </h2>
-                        <!-- <img src="img/classification/garaldes.gif" alt="Garaldes" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content2" class="mindtree__link js-type">Ренессансная антиква</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content2">
+                        <img src="img/classification/garaldes.gif" alt="Garaldes" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Garaldes, FR: Garaldes, GE: Französische Renaissance-Antiqua</p>
                             <p>Появилась во время французского возрождения. Английское название «гаральдес» — это соединение имён французского изготовителя пуансонов Клода Гарамона и венецианского печатника Альда Мануция. Первые гаральдические шрифты были основаны на гуманистических, но они более утонченные, сложные и имеют узкие пропорции и более плавные переходы. Для гуманистической антиквы роль поворота и контраста пера гораздо виднее, когда гаральды являются более “нарисованными”, придуманными.</p>
@@ -97,7 +77,7 @@
                             <p>Как и в гуманистических, ось контраста толщины наклонена левее, но контраст гораздо сильнее. Перекладина у буквы “е” горизонтальная. Верхние засечки крышеобразные и, как и в гуманистических, имеют треугольную форму. Нижние засечки не имеют или почти не имеют скруглений внизу. Жирные и курсивные начертания были добавлены позже к таким шрифтам.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/garaldes/bembo.jpg" alt="Bembo" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/garaldes/bembo.jpg" alt="Bembo" class="popup_classification_ex">
                                     <p>Bembo, Francesco Griffo, 1495-1501</p>
                                 </span>
                                 <span class="type-example">    
@@ -124,17 +104,16 @@
                                     <img src="img/garaldes/sabon.jpg" alt="Sabon" class="popup_classification_ex">
                                     <p>Sabon, Jan Tschichold 1967, Claude Garamond 1499-1561</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>    
                         </div>
                     </article>
-             </div>
-             <div class="info info-4" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Переходная антиква
-                        </h2>
-                        <!-- <img src="img/classification/transitionals.gif" alt="Transitionals" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content3" class="mindtree__link js-type">Переходная антиква</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content3">
+                        <img src="img/classification/transitionals.gif" alt="Transitionals" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Transitionals, FR: Réales, GE: Barock-Antiqua</p>
                             <p>Переходные, ранние неоклассицистические шрифты появились в середине восемнадцатого века и обычно создавались для определённых целей. Это более строгие, практичные, с более резким рисунком, чем их предшественники. Скорее всего, это первые шрифты, которые действительно разрабатывались, а не основывались на почерках и письме пером. Переходными они называются из-за перехода от возрождения к неоклассицизму. Поэтому некоторые из этих шрифтов иногда относят к гаральдам, а некоторые к классицистическим антиквам. Со временем контраст толщин увеличивается и засечки становятся тоньше. Когда шрифт имеет характеристика и ренессансной антиквы, и классицистической, его можно отнести к переходным. Гуманистические шрифты в основном создавались в Италии. Гаральдесы так же имеют французское прикосновение. Переходные, однако, создавались по всей Европе. Есть французские, английские, голландские и итальянские переходные антиквы. Единственная страна, которая в очень небольшой степени участвовала в этом типографическом развитии была Германия, где до сих пор была популярна готика.</p>
@@ -142,7 +121,7 @@
                             <p>Ось контраста толщин практически вертикальная, или совсем немного наклоняется влево. Для буквы “о” практически всегда характерно вертикальное положение, но для буквы “е” в том же шрифте ось может быть больше повернута влево. Нижние засечки практически не скруглены снизу. Горизонтальный штрих у прописной “е” горизонтальный, не повернут. Верхние засечки у строчных крышеобразные. Засечки иногда скругленные, иногда острые, в некоторых случаях четко горизонтальные, как в классицистической антикве. Другой типичный элемент — основа нижнего выносного элемента буквы “b” и “капля” на кончиках строчных “g” и “r”.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/transitionals/caslon.jpg" alt="Caslon" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/transitionals/caslon.jpg" alt="Caslon" class="popup_classification_ex">
                                     <p>Между гаральдами и переходными. Caslon Old Face, William Caslon около 1950х и George Ostrochulski около 1950х</p>
                                 </span>
                                 <span class="type-example">    
@@ -169,17 +148,16 @@
                                     <img src="img/transitionals/perpetua.jpg" alt="Perpetua" class="popup_classification_ex">
                                     <p>Perpetua Eric Gill в 1928</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>    
                         </div>
                     </article>
-             </div>   
-             <div class="info info-5" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Нового стиля, классицистическая антиква
-                        </h2>
-                        <!-- <img src="img/classification/didones.gif" alt="Didones" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content4" class="mindtree__link js-type">Классицистическая антиква</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content4">
+                        <img src="img/classification/didones.gif" alt="Didones" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>Eng: Didones, FR: Didones, GE: Klassizistische Antiqua</p>
                             <p>Это поздние неоклассические шрифты с засечками. Английское азвание Didones возникло комбинацией имен французской семьи печатников Дидот и итальянского печатника Бодони. Шрифт Бодони Джамбаттиста Бодони считается основным в группе классицистических антикв. Монументальная симметричная конструкция и сбалансированные пропорции дает шрифту свежую элегантность.</p>
@@ -188,7 +166,7 @@
                             <p>Bauer Bodoni и Omnibus Bodoni Classico. Bauer Bodoni (сверху), разработанный Генрихом Джостом, считается одним из красивейших ревайвалов оригинального Bodoni, сделанного Manuale Tipografico. Bodoni Classico показывает версию Франко Луина с чуть более толстыми засечками и горизонтальными штрихами для небольших размеров штрихов.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/didones/bertholdbodoni.jpg" alt="Berthold Bodoni" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/didones/bertholdbodoni.jpg" alt="Berthold Bodoni" class="popup_classification_ex">
                                     <p>Berthold Bodoni, Günter Gerhard Lange, H. Berthold, 1930 - 1985</p>
                                 </span>
                                 <span class="type-example">    
@@ -203,16 +181,16 @@
                                     <img src="img/didones/walbaum.jpg" alt="Walbaum" class="popup_classification_ex">
                                     <p>Walbaum, Justus Walbaum около 1800, Monotype 2018</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>                            
                         </div>
                     </article>
-             </div>      
-             <div class="info info-6" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Брусковые шрифты
-                        </h2>
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content5" class="mindtree__link js-type">Брусковые шрифты</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content5">
+                        <img src="img/classification/slab-serifs.gif" alt="Slab-serifs" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>Eng: Slab-serifs, FR: Mécanes, GE: Serifenbetonte Linear-Antiqua</p>
                             <p>Брусковые шрифты обычно почти не имеют контраста. Некоторые ранние брусковые шрифты называются Египетскими — как утверждают, после кампании Наполеона в Египте и возникшим интересом к египтологии.</p>
@@ -222,7 +200,7 @@
                             <p>Небольшой контраст толщин, тяжелые прямоугольные засечки такой же толщины, что и основные штрихи в буквах. Засечки — основная определяющая характеристика шрифта.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/slab-serifs/beton.jpg" alt="Beton" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/slab-serifs/beton.jpg" alt="Beton" class="popup_classification_ex">
                                     <p>Beton, Heinrich Jost, 1936</p>
                                 </span>
                                 <span class="type-example">    
@@ -245,17 +223,16 @@
                                     <img src="img/slab-serifs/serifa.jpg" alt="Serifa" class="popup_classification_ex">
                                     <p>Serifa, Adrian Frutiger, 1968</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>                              
                         </div>
                     </article>
-             </div>      
-             <div class="info info-7" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Гуманистические гротески
-                        </h2>
-                        <!-- <img src="img/classification/humanisticsans-serif.gif" alt="Humanistic sans-serifs" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content6" class="mindtree__link js-type">Гуманистические гротески </a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content6">
+                        <img src="img/classification/humanisticsans-serif.gif" alt="Humanistic sans-serifs" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Humanistic sans-serifs, FR: Linéales Humanes, GE: Serifenlose humanis­tische Linear-Antiqua</p>
                             <p>Гротески это шрифты, которые наследуют свои основные формы у письма, а французское слово ‘linéal’ означает «двигаться по прямой линии». Они впервые появились в начале девятнадцатого века (Caslon Foundry, 1812/14), но только с заглавными буквами. Первый гротеск со строчными появился в Англии в 1834, но уже к концу девятнадцатого века каждая уважающая себя литейная имела несколько гротесков с несколькими вариантами. Гуманистические гротески отличаются тем, что следуют пропорциям классических римских капитальных для заглавных букв и гуманистическим манускриптам для строчных. Они хорошо читаются, в них хорошо распознаются изображения слов.</p>
@@ -283,24 +260,23 @@
                                     <p>FF Meta, Erik Spiekermann, 1991</p>
                                 </span>
                                 <span class="type-example">    
-                                    <img src="img/humanistic sans-serif/myriad.jpg" alt="Myriad" class="popup_classification_ex hover-shadow" onclick="openModal();currentSlide(1)">
+                                    <img src="img/humanistic sans-serif/myriad.jpg" alt="Myriad" class="popup_classification_ex">
                                     <p>Myriad, Robert Slimbach, 1992 Carol Twombly, 1992</p>
                                 </span>
                                 <span class="type-example">    
                                     <img src="img/humanistic sans-serif/syntax.jpg" alt="Synax" class="popup_classification_ex">
                                     <p>Syntax, Hans Eduard Meier, 1968</p>
-                                </span>       
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>                              
+                                </span>                                     
                             </div> 
                         </div>
                     </article>
-             </div>      
-             <div class="info info-8" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Нео гротески
-                        </h2>
-                        <!-- <img src="img/classification/neoclassicalsans-serifs.gif" alt="Neoclassical sans-serifs" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content7" class="mindtree__link js-type">Нео гротески</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content7">
+                        <img src="img/classification/neoclassicalsans-serifs.gif" alt="Neoclassical sans-serifs" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Neoclassical sans-serifs, FR: Linéales Classicistes, GE: Serifenlose klassizistische Linear-Antiqua</p>
                             <p>Неогротески появились в результате популярности швейцарского стиля типографики после Второй Мировой Войны. Несколько шрифтов без засечек были созданы ранее, как Akzidenz Grotesk (1898(, Reform-Grotesk (1904-1907), Venus (1907), News Gothic (1908), Erbar (1924), Kabel (1927), Futura (1927), Gill Sans (1927) и  Neuzeit-Grotesk (1928). Однако, в основном они использовались в основном для заголовков и очень редко для текста. Гротески начали использоваться чаще и чаще после 1957г. с приходом шрифта Гельветика, созданного швейцарцем Максом Мидингером.</p>
@@ -308,7 +284,7 @@
                             <p>Без засечек, толщины штрихов кажутся одинаковыми, но имеют легкий визуальный контраст. Ось окружностей вертикальная, высота верхних выносных элементов обычно такая же, как высота заглавных букв, дуга буквы “e” повернута в сторону горизонтального штриха. Строчная “g” имеет открытую дугу, заканчивающуюся разворотом наверх.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/neoclassical sans-serifs/akzidenz-grotesk.jpg" alt="Akzidenz Grotesk" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/neoclassical sans-serifs/akzidenz-grotesk.jpg" alt="Akzidenz Grotesk" class="popup_classification_ex">
                                     <p>Akzidenz Grotesk, H. Berthold 2001, Fedinand Theinhardt 1880</p>
                                 </span>
                                 <span class="type-example">    
@@ -323,17 +299,17 @@
                                     <img src="img/neoclassical sans-serifs/univers.jpg" alt="Univers" class="popup_classification_ex">
                                     <p>Univers, Adrian Frutiger, 1957</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>  
+
                         </div>
                     </article>
-             </div>      
-             <div class="info info-9" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Американ Готик
-                        </h2>
-                        <!-- <img src="img/classification/americangothic.gif" alt="American Gothic" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content8" class="mindtree__link js-type">Американ Готик</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content8">
+                        <img src="img/classification/americangothic.gif" alt="American Gothic" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Benton sans-serifs, American gothics; FR: Benton-Linéales, GE: Serifenlose Benton-Linear-Antiqua</p>
                             <p>Прототип этой группы шрифт Franklin Gothic, спроектированный Моррисом Фуллером Бентоном. В шрифтах этой группы видна близкая связь с нео-гротесками. Разница в основном в контурах букв “B”, “P”, и “R” и в том, что эти шрифты довольно узкие, с высокими строчными буквами. Это позволяет таким шрифтам быть читаемыми даже когда качество бумаги довольно плохое. Поднятая линия высоты строчных — черта большого количества американских шрифтов.</p>
@@ -341,7 +317,7 @@
                             <p>Без засечек, хорошо видный контраст толщин, ось наклона вертикальная, внутренние белые пространства большие, особенно в таких буквах, как “B”, “P”, и “R”. Высота строчных букв больше, чем обычно в гротесках из других групп. Узкие, вертикальные конструкции, часто заглавные буквы угловатые.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/american gothic/antiqueolive.jpg" alt="Antique Olive" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/american gothic/antiqueolive.jpg" alt="Antique Olive" class="popup_classification_ex">
                                     <p>Antique Olive, Roger Excoffon, 1969</p>
                                 </span>
                                 <span class="type-example">    
@@ -372,17 +348,16 @@
                                     <img src="img/american gothic/vectora.jpg" alt="Vectora" class="popup_classification_ex">
                                     <p>Vectora, Adrian Frutiger, 1990</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>  
                         </div>
                     </article>
-             </div>      
-             <div class="info info-10" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Геометрические гротески
-                        </h2>
-                        <!-- <img src="img/classification/geometricsans-serifs.gif" alt="Geometric sans-serifs" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content9" class="mindtree__link js-type">Геометрические гротески</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content9">
+                        <img src="img/classification/geometricsans-serifs.gif" alt="Geometric sans-serifs" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Geometric sans-serifs, FR: Linéales Géométriques, GE: Geometrische serifenlose Linear-Antiqua</p>
                             <p>Геометрические гротески выглядят так, будто были нарисованы с помощью линейки и циркуля. Нужно иметь много навыков для того, чтобы создать хорошо читаемую типографику с этими шрифтами — важны хорошая микротипографика, такая как выбор правильного межбуквенного и межстрочного расстояний. 
@@ -391,7 +366,7 @@
                             <p>Без засечек, толщины линий минимально изменены, ось окружностей вертикальная, а сами буквы выглядят так, как будто были нарисованы при помощи циркуля и линейки.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/geometric sans-serif/dinneuzeitgrotesk.jpg" alt="DIN Neuzeit Grotesk" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/geometric sans-serif/dinneuzeitgrotesk.jpg" alt="DIN Neuzeit Grotesk" class="popup_classification_ex">
                                     <p>DIN Neuzeit Grotesk, Wilhelm Pischner</p>
                                 </span>
                                 <span class="type-example">    
@@ -410,17 +385,16 @@
                                     <img src="img/geometric sans-serif/itcavantgardegothic.jpg" alt="ITC Cavantgarde Gothic" class="popup_classification_ex">
                                     <p>ITC Avant Garde Gothic, Herb Lubalin, Tom Carnase, Edward Benguiat, André Gürtler, Erich Gschwind, Christian Mengelt, 1970</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>  
                         </div>
                     </article>
-             </div>      
-             <div class="info info-11" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Глифические гротески
-                        </h2>
-                        <!-- <img src="img/classification/glyphics.gif" alt="Glyphics" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content10" class="mindtree__link js-type">Глифические гротески</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content10">
+                        <img src="img/classification/glyphics.gif" alt="Glyphics" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Glyphics, FR: Incises, GE: Antiqua-Varianten</p>
                             <p>Глифические гротески имеют взаимосвязь с вырезанными по камню или металлу буквы. Обычно это монументальные шрифты, или другими словами, мощные, крепкие и простые, имеющие такие формы из-за ограничений материалов, на которых они вырезаются. Имеют небольшие утолщения на концах, или иногда острые, треугольные засечки. Это не шрифты без засечек, но так же и не совсем шрифты с засечками. В результате, шрифты этой группы смотрятся более живо в тексте, чем гротески, но так же выглядят и ощущаются менее классическими, чем шрифты с засечками.</p>
@@ -428,7 +402,7 @@
                             <p>Формы ссылаются на вырезанные по твердому материалу буквы, у них есть утолщения или треугольные засечки на концах букв.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/glyphics/albertus.jpg" alt="Albertus" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/glyphics/albertus.jpg" alt="Albertus" class="popup_classification_ex">
                                     <p>Albertus, Berthold Wolpe, 1940</p>
                                 </span>
                                 <span class="type-example">    
@@ -451,17 +425,16 @@
                                     <img src="img/glyphics/trajan.jpg" alt="Trajan" class="popup_classification_ex">
                                     <p>Trajan, Carol Twombly, 1989</p>
                                 </span>
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>
                             </div>  
                         </div>
                     </article>
-             </div>      
-             <div class="info info-12" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Рукописные шрифты
-                        </h2>
-                        <!-- <img src="img/classification/scripts.gif" alt="Scripts" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content11" class="mindtree__link js-type">Рукописные шрифты</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content11">
+                        <img src="img/classification/scripts.gif" alt="Scripts" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Scripts, Fr: Scriptes, D: Schreibschriften</p>
                             <p>Созданы для того, чтобы выглядеть как рукописные и часто состоят из курсивных форм. Обычно не предназначены для длинных текстов. В отличие от графических, эти шрифты разработаны в цифровом виде, но имитируют почерки. Шрифт Snell Roundhand, например, основан на почерке мастера семнадцатого века Чарльза Снелла.</p>
@@ -469,7 +442,7 @@
                             <p>Шрифты этой группы обычно курсивные. Иногда оригинальные буквы крепкие, написанные ширококонечным пером, иногда легкие и элегантно закрученные, написанные остроконечным пером.</p>
                             <div class="classificatio_examples">
                                 <span class="type-example">    
-                                    <img src="img/scripts/bertholdscript.jpg" alt="Berthold Script" class="popup_classification_ex" onclick="openModal();currentSlide(1)">
+                                    <img src="img/scripts/bertholdscript.jpg" alt="Berthold Script" class="popup_classification_ex">
                                     <p>Berthold Script, Günter, 1977</p>
                                 </span>
                                 <span class="type-example">    
@@ -495,18 +468,17 @@
                                 <span class="type-example">    
                                     <img src="img/scripts/zapfino.jpg" alt="Zapfino" class="popup_classification_ex">
                                     <p>Zapfino, Hermann Zapf, 2003</p>
-                                </span>     
-                                <a href="basicUsage.html" type="button" class="button" value="Input Button" hr>Посмотреть на таймлайне</a>                           
+                                </span>                                
                             </div>  
                         </div>
                     </article>
-             </div>      
-             <div class="info info-13" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Графические шрифты
-                        </h2>
-                        <!-- <img src="img/classification/graphics-tekton.jpg" alt="Adobe Tekton" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content12" class="mindtree__link js-type">Графические шрифты</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content12">
+                        <img src="img/classification/graphics-tekton.jpg" alt="Adobe Tekton" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Graphics, FR: Manuaires, GE: Handschriftliche Antiqua</p>
                             <p>Много путаницы возникает вокруг различий между рукописными и графическими шрифтами, но немецкие термины ясно показывают разницу. Термин ‘Schreibschriften’ для рукописных, переводятся как “почерковые шрифты”. Это переход от почерка к металлическому или цифровому шрифту. Немецкий термин ‘Handschriftliche Antiqua’ для графических. Это шрифты, которые имеют характеристики любого из нескольких рукописных почерков. Дизайн процесс графических шрифтов отличен от рукописных шрифтов. Антиква это шрифты, которые происходят из романских почерков, как венецианские антиквы и глифические гротески.</p>
@@ -515,12 +487,12 @@
                             <p>Adobe Tekton, 1989г., дизайнер Девид Сигел, основан на летеринге американского архитектора Франка Чинга. Тектон означает летеринг в архитектурных рисунках и неофициальных проектах.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-14" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Готические шрифты
-                        </h2>
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content13" class="mindtree__link js-type">Готические шрифты</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content13">
                         <img src="img/classification/gothic-cloister.jpg" alt="Cloister Black" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Gothic Types, FR: Caractères Brisés ou à Fractures, GE: Gebrochene Schriften</p>
@@ -530,13 +502,13 @@
                             <p>ACloister Black от Kingsley/ATF, текстура 1904 г. Морриса Фуллера Бентона и Джона В. Пхиней.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-15" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Классик-Деко
-                        </h2>
-                        <!-- <img src="img/classification/classic-deco-bocklin.jpg" alt="Bocklen" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content14" class="mindtree__link js-type">Классик-Деко</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content14">
+                        <img src="img/classification/classic-deco-bocklin.jpg" alt="Bocklen" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Classic-Deco</p>
                             <p>Цель создания этих шрифтов — привлекать взгляды на рекламу и товары. Такие шрифты должны были, c одной стороны, выделяться, а с другой, вписываться в характер эпохи и оставаться довольно читаемыми. Внешний вид таких шрифтов зависел от продаваемого продукта. Наиболее известны шрифты этой категории времен Арт Деко, но к ним так же относятся, например, западные шрифты пятидесятых годов. Современные возрождения таких шрифтов обычно создаются для ассоциации с определенным временем, окружением.</p>
@@ -544,13 +516,13 @@
                             <p>Привлекающие внимание, искусные. Формы и названия таких шрифтов обычно говорят об их происхождении или целях.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-16" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Типографические
-                        </h2>
-                        <!-- <img src="img/classification/typographic-radiorama.jpg" alt="Radiorama" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content15" class="mindtree__link js-type">Типографические</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content15">
+                        <img src="img/classification/typographic-radiorama.jpg" alt="Radiorama" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Classic-Deco</p>
                             <p>Шрифты, очень напоминающие шрифты из исторических групп. Но их использование в тексте ограниченно из-за слишком многих деталей в формах, из-за неполного набора (только заглавные буквы) или из-за того, что они показывают умышленно смелую интерпретацию классических шрифтов. Пример — шрифт Radiorama испанского Type-Ø-Tones, адаптация Гельветики c насмешливо добавленными засечками и другими формами.</p>
@@ -558,13 +530,13 @@
                             <p>Если коротко, это традиционные шрифты с какими-то дополнениями.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-17" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Беспорядочные
-                        </h2>
-                        <!-- <img src="img/classification/DissorderAchilles.jpg" alt="Achilles Blur" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content16" class="mindtree__link js-type">Беспорядочные</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content16">
+                        <img src="img/classification/DissorderAchilles.jpg" alt="Achilles Blur" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Disorder</p>
                             <p>Эти шрифты возникли в начале девяностых и частично были вдохновлены неформальными течениями, такими как панк музыка. Обычно это быстро созданные шрифты, основанные на существующих шрифтах с добавлением различных эффектов вроде повреждений, деформации, имитации эффекта эрозии.</p>
@@ -572,13 +544,13 @@
                             <p>Содержат деформированные буквы, часто с расплывчатыми контурами. Почти всегда можно распознать изначальный шрифт.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-18" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Техно
-                        </h2>
-                        <!-- <img src="img/classification/techno-magneto.jpg" alt="Magneto" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content17" class="mindtree__link js-type">Техно</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content17">
+                        <img src="img/classification/techno-magneto.jpg" alt="Magneto" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Techno</p>
                             <p>Такие шрифты довольно плотные, и иногда выглядят так, как будто они были вырезаны или вылиты из металла с повторением каких-то базовых форм. Большое количество таких шрифтов используется для игр, анимации, 3д произведений и плакатов для танцевальных и техно сцен. </p>
@@ -586,13 +558,13 @@
                             <p>Простые, техничные по форме, грузные. Выглядят так, как будто были вырезаны или вылиты из металла.</p>
                         </div>
                     </article>
-             </div>      
-             <div class="info info-19" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Модульные
-                        </h2>
-                        <!-- <img src="img/classification/modular-emperor.jpg" alt="Emperor" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content18" class="mindtree__link js-type">Модульные</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content18">
+                        <img src="img/classification/modular-emperor.jpg" alt="Emperor" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Modular</p>
                             <p>Эти шрифты спроектированы с помощью модулей. Emigre было одно из агентств, которые ввели эту технику и экспериментировали с ней в первых выпусках журнала  Emigre.</p>
@@ -600,13 +572,13 @@
                             <p>Базовые модули всегда видны, всегда состоят из базовых форм.</p>
                         </div>
                     </article>
-             </div> 
-             <div class="info info-20" style="display: none;">
-                    <article class="mindtree__content js-info">
-                        <h2 class="mindtree__title">
-                            Фантастические
-                        </h2>
-                        <!-- <img src="img/classification/fantasy-wetandwilde.jpg" alt="Fantasy Font" class="mindtree__content-pic"> -->
+                </li>
+                <li class="mindtree__type">
+                    <h2 class="mindtree__title">
+                        <a href="#content19" class="mindtree__link js-type">Фантастические</a>
+                    </h2>
+                    <article class="mindtree__content js-info" id="content19">
+                        <img src="img/classification/fantasy-wetandwilde.jpg" alt="Fantasy Font" class="mindtree__content-pic">
                         <div class="mindtree__content-text">
                             <p>ENG: Fantasy</p>
                             <p>Эта группа объединяет шрифты, которые выглядят празднично, щедро украшены или же выражают изобилие любым другим способом.</p>
@@ -614,380 +586,17 @@
                             <p>Очень разнообразные, изобилующие декорациями. Обычно не имеют какой-то связи с традиционными шрифтами.</p>
                         </div>
                     </article>
-             </div>                                  
-</div>
-
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="System-14.jpg" style="width:100%">
+                </li>                
+            </ul>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__copy">&copy;&nbsp;2018, Types Classification</div>
+            </div>
+        </footer>
     </div>
-  </div>  
 
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-</div>
-
-
-<div class="info info-49" style="display: none;">
-                    <article class="mindtree__content js-info" id="content1">
-                        <img src="img/classification/System-14.jpg" alt="Myriad" class="mindtree__content-pic">
-                    </article>   
-</div>
-
-
-<pre id="eventSpan"></pre>
-
-<script type="text/javascript">
-
-$(function() {
-    console.log( "ready!" );
-
-    // create an array with nodes
-    var nodes = new vis.DataSet([
-        {id: 1, label: ' Классификация\nшрифтов ', shape: 'circle', color: {background: "rgba(0,0,0,1)"}, font: {face:'Roboto',align: 'center', color: "rgba(255,247,254,1)"} },
-        {id: 2, label: ' Гуманистическая антиква ', align: 'left', layout: {hierarchical: {levelSeparation: -1000}}},
-        {id: 3, label: ' Ренессансная антиква', align: 'left'},
-        {id: 4, label: ' Переходная антиква', align: 'left'},
-        {id: 5, label: ' Нового стиля'},
-        {id: 6, label: ' Брусковые шрифты'},
-        {id: 7, label: ' Гуманистические гротески'},
-        {id: 8, label: ' Нео гротески'},
-        {id: 9, label: ' Американ Готик'},
-        {id: 10, label: 'Геометрические гротески'},
-        {id: 11, label: 'Глифические гротески'},
-        {id: 12, label: 'Рукописные шрифты'},
-        {id: 13, label: 'Графические шрифты'},
-        {id: 14, label: 'Текстура'},
-        {id: 15, label: 'Классик-Деко'},
-        {id: 16, label: 'Типографические'},
-        {id: 17, label: 'Беспорядочные'},
-        {id: 18, label: 'Техно'},
-        {id: 19, label: 'Модульные'},
-        {id: 20, label: 'Фантастические'},
-        {id: 21, label: 'Антиква'},
-        {id: 22, label: 'Гротески'},
-        {id: 23, label: 'Готические'},
-        {id: 25, label: 'Рукописные'},
-        {id: 24, label: 'Акцидентные'},
-        {id: 26, label: 'Нелатинские'},
-        {id: 27, label: '', image: 'Humanistic.jpg', shape: 'image', layout: {hierarchical: {levelSeparation: -1000}}},
-        {id: 28, label: '', image: 'Humanistic.jpg', shape: 'image'},
-        {id: 29, label: '', image: 'Humanistic.jpg', shape: 'image'},
-        {id: 30, label: '', image: 'Humanistic.jpg', shape: 'image'},
-        {id: 32, label: '', image: 'Humanistic.jpg', shape: 'image'},
-        {id: 33, label: '', image: 'Humanistic.jpg', shape: 'image'},
-        {id: 34, label: 'Ротунда'},
-        {id: 35, label: 'Швабахер'},
-        {id: 36, label: 'Фрактура'},
-        {id: 37, label: 'Сivilite'},
-        {id: 38, label: 'Старославянские'},
-        {id: 39, label: 'Египетская брусковая'},
-        {id: 40, label: 'Геометрическая брусковая'},
-        {id: 41, label: 'Гуманистическая брусковая'},
-        {id: 42, label: 'Брусковая кларендон'},
-        {id: 43, label: 'Итальянская брусковая'},
-        {id: 44, label: 'Устав'},
-        {id: 45, label: 'Полуустав'},
-        {id: 46, label: 'Скоропись'},
-        {id: 47, label: 'Вязь'},
-        {id: 48, label: 'Прочие'}
-
-    ]);
-
-    // create an array with edges
-    var edges = new vis.DataSet([
-        {from: 1, to: 21},
-        {from: 1, to: 22},
-        {from: 1, to: 23},
-        {from: 1, to: 24},
-        {from: 1, to: 25},
-        {from: 1, to: 26},
-        {from: 21, to: 2},
-        {from: 21, to: 3},
-        {from: 21, to: 4},
-        {from: 21, to: 5},
-        {from: 21, to: 11},
-        {from: 21, to: 6},
-        {from: 22, to: 7}, 
-        {from: 22, to: 8},
-        {from: 22, to: 9},
-        {from: 22, to: 10},
-        {from: 25, to: 12},
-        {from: 25, to: 13},
-        {from: 23, to: 14},
-        {from: 23, to: 34},
-        {from: 23, to: 35},
-        {from: 23, to: 36},
-        {from: 23, to: 37},
-        {from: 24, to: 15},
-        {from: 24, to: 16},
-        {from: 24, to: 17},
-        {from: 24, to: 18},
-        {from: 24, to: 19},
-        {from: 24, to: 20},
-        {from: 26, to: 38},
-        {from: 2, to: 27},
-        {from: 3, to: 28},
-        {from: 4, to: 29},
-        {from: 5, to: 30},    
-        {from: 7, to: 32},  
-        {from: 8, to: 33},
-        {from: 38, to: 44},
-        {from: 38, to: 45},
-        {from: 38, to: 46},
-        {from: 38, to: 47},
-        {from: 38, to: 48},
-        {from: 6, to: 39}, 
-        {from: 6, to: 40},
-        {from: 6, to: 41},
-        {from: 6, to: 42},
-        {from: 6, to: 43}   
-
-    ]);
-
-
-
-    // create a network
-    var container = document.getElementById('mynetwork');
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-
-
-
-
-
-    var options = {
-			interaction:{hover: true},
-			manipulation: {enabled: true},
-            layout: {
-                hierarchical: {
-                  enabled: true,
-                  levelSeparation: -900,
-                  direction: "LR",
-                  sortMethod: "directed",
-                  blockShifting: false,
-                  // nodeSpacing: 660
-                  treeSpacing: 455,
-                  edgeMinimization: false
-                }},
-            nodes: {
-                borderWidth: 0,
-                color: {
-                     // border: "rgba(56,56,56,0.44)",
-                     background: "#d8d8d8",
-                     highlight: {
-                            border: "rgba(19,38,19,0)",
-                            background: "#d8d8d8"
-                            },
-                     hover: {
-                        border: "rgba(140,103,233,0)",
-                        background: "#d8d8d8"
-                            }},
-                font: {
-                    size: 54,
-                    face: "sofia-pro",
-                    align: "left",
-                    strokeWidth: 0
-                       },
-                scaling: {
-                  min: null,
-                  max: 38,
-                  label: {
-                    enabled: true,
-                    min: null,
-                    max: 30,
-                    maxVisible: null,
-                    drawThreshold: null   
-                    }},  
-                shape: "box",
-                shapeProperties: {
-                  borderRadius: null,
-                  useImageSize: true
-                }},
-
-                
-              
-            edges: {
-                arrowStrikethrough: false,
-                width: 3,
-                color: {
-                  color: "rgba(66,187,204,1)",
-                  inherit: false
-                   },
-                smooth: {
-                  type: "cubicBezier",
-                  forceDirection: "horizontal",
-                  roundness: 0.5
-                         }},
-
-             interaction: {
-                dragView: false,
-                hover: true,
-                keyboard: {
-                  enabled: true
-                }},
-            
-            manipulation: {
-                enabled: true,
-                initiallyActive: true
-            },
-
-            physics: {
-                hierarchicalRepulsion: {
-                  centralGravity: 0
-                },
-            minVelocity: 0.75
-            }
-        };
-
-
-
-
-    var network = new vis.Network(container, data, options);
-
-    network.on("click", function (params) {
-        var id = this.getNodeAt(params.pointer.DOM);
-            $('.info').hide();
-
-        if (id) {
-            $('.info-'+id).show();
-        }
-
-
-
-        // params.event = "[original event]";
-        // document.getElementById('eventSpan').innerHTML = '<h2>Click event:</h2>' + JSON.stringify(params, null, 4);
-        // console.log('click event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
-    });
-    network.on("doubleClick", function (params) {
-        params.event = "[original event]";
-        document.getElementById('eventSpan').innerHTML = '<h2>doubleClick event:</h2>' + JSON.stringify(params, null, 4);
-
-    });
-    network.on("oncontext", function (params) {
-        params.event = "[original event]";
-        document.getElementById('eventSpan').innerHTML = '<h2>oncontext (right click) event:</h2>' + JSON.stringify(params, null, 4);
-    });
-    network.on("dragStart", function (params) {
-        // There's no point in displaying this event on screen, it gets immediately overwritten
-        params.event = "[original event]";
-        console.log('dragStart Event:', params);
-        console.log('dragStart event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
-    });
-    network.on("dragging", function (params) {
-        params.event = "[original event]";
-        document.getElementById('eventSpan').innerHTML = '<h2>dragging event:</h2>' + JSON.stringify(params, null, 4);
-    });
-    network.on("dragEnd", function (params) {
-        params.event = "[original event]";
-        document.getElementById('eventSpan').innerHTML = '<h2>dragEnd event:</h2>' + JSON.stringify(params, null, 4);
-        console.log('dragEnd Event:', params);
-        console.log('dragEnd event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
-    });
-    network.on("zoom", function (params) {
-        document.getElementById('eventSpan').innerHTML = '<h2>zoom event:</h2>' + JSON.stringify(params, null, 4);
-    });
-    network.on("showPopup", function (params) {
-        document.getElementById('eventSpan').innerHTML = '<h2>showPopup event: </h2>' + JSON.stringify(params, null, 4);
-    });
-    network.on("hidePopup", function () {
-        console.log('hidePopup Event');
-    });
-    network.on("select", function (params) {
-        console.log('select Event:', params);
-        // var id = this.getNodeAt(params.pointer.DOM);
-        //     if (id) {
-        //     $('.info-'+id).show();
-        //     }
-    });
-    network.on("selectNode", function (params) {
-        console.log('selectNode Event:', params);
-    });
-    network.on("selectEdge", function (params) {
-        console.log('selectEdge Event:', params);
-    });
-    network.on("deselectNode", function (params) {
-        console.log('deselectNode Event:', params);
-    });
-    network.on("deselectEdge", function (params) {
-        console.log('deselectEdge Event:', params);
-    });
-    network.on("hoverNode", function (params) {
-        console.log('hoverNode Event:', params);
-    });
-    network.on("hoverEdge", function (params) {
-        console.log('hoverEdge Event:', params);
-    });
-    network.on("blurNode", function (params) {
-        console.log('blurNode Event:', params);
-    });
-    network.on("blurEdge", function (params) {
-        console.log('blurEdge Event:', params);
-    });
-});
-
-
-
-</script>
-
-
-
-
-<script>
-// Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

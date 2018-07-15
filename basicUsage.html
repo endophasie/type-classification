@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Таймлайн</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: sofia-pro, sans-serif;
+    }
+  </style>
+
+  <script type="text/javascript" src="scripts/vis.js"></script>
+  <link href="styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fui0gvv.css">
+
+</head>
+<body>
+
+
+
+
+<div id="visualization"></div>
+
+<script type="text/javascript">
+
+
+var itme5 = document.createElement('div');
+ itme5.appendChild(document.createTextNode('Script'));
+ itme5.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme5.appendChild(img5);
+
+
+ var itme1 = document.createElement('div');
+ itme1.appendChild(document.createTextNode('Script'));
+ itme1.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme1.appendChild(img5);
+
+ var itme2 = document.createElement('div');
+ itme2.appendChild(document.createTextNode('Script'));
+ itme2.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme2.appendChild(img5);
+
+ var itme3 = document.createElement('div');
+ itme3.appendChild(document.createTextNode('Script'));
+ itme3.appendChild(document.createElement('br'));
+  var img5 = document.createElement('img');
+  img5.src = 'Humanistic.jpg';
+  img5.style.width = '48px';
+  img5.style.height = '48px';
+ itme3.appendChild(img5);
+
+
+
+
+  // DOM element where the Timeline will be attached
+  // var container = document.getElementById('visualization');
+
+
+
+
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 'A', content: 'Modern', start: '1910-01-16', end: '1950-01-22', type: 'background', group: 1},
+    {id: 'B', content: 'Post Modern', start: '1980', end: '2014', type: 'background', group: 2},
+    {id: 'C', content: 'Шрифты', start: '1910-01-16', end: '1950-01-22', type: 'background'},
+    // {id: 'D', content: 'События в искусстве', start: '1980', end: '2014', type: 'background'},
+    // {id: 'E', content: 'События в мире', start: '1980', end: '2014', type: 'background', group: 2, group: 'non-existing'},
+    {id: 1, content: 'item 1<br>start', start: '1920', group: 1},
+    {id: 2, content: 'item 2', start: '1900', group: 1},
+    {id: 15, content: 'Edward Johnston', start: '1913', end: '1916', group: 1},
+    {id: 16, content: 'Johnston', start: '1916'},
+    {id: 3, content: 'Eric Gill', start: '1926', end: '1928'}, 
+    {id: 4, content: 'Gill Sans', start: '1928'},
+    {id: 5, content: 'Frederic W. Goudy', start: '1929', end: '1930', group: 2},
+    {id: 6, content: 'Goudy Sans', start: '1930'},
+    {id: 7, content: 'Hermann Zapf', start: '1952', end: '1958'},
+    {id: 8, content: 'Optima', start: '1958'},
+    {id: 9, content: 'Hans Eduard Meier', start: '1954', end:'1968', group: 2},
+    {id: 10, content: 'A. Boton, A. Hollenstein', start: '1960', end:'1976'},
+    {start: new Date(1900),  content: 'Появление фотонабора'},
+    {id: 11, content: itme5, start: '2013-04-25'},
+    {id: 12, content: itme1, start: '1923'},
+    {id: 13, content: itme2, start: '1950'},
+    {id: 14, content: itme3, start: '1980'},
+    {start: new Date(1913), content: 'Открытие школы Bauhaus', group: 1},
+    {start: new Date(1940,7,13), content: 'Такой-то такой-то выступает с крутым докладом на крутой конференции'},
+  ]);
+
+  var groups = new vis.DataSet([
+    {id: 1, content: 'Group 1'},
+    {id: 2, content: 'Group 2'}
+  ]);
+
+
+  var container = document.getElementById('visualization');
+  var options = {
+
+  };
+
+
+
+  // Configuration for the Timeline
+  // var options = {
+  //   // type: 'point',
+  //   // showMajorLabels: false
+  // };
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
+</script>
+
+
+
+</body>
+</html>
